@@ -230,8 +230,8 @@ class LinkedList:
         # cur = self.head 
         # while cur:
         #     if total_len == n:
-        #         print(cur.data)
-        #         return cur
+        #        
+        #         return cur.data
         #     total_len -= 1
         #     cur = cur.next
         # if cur is None:
@@ -246,7 +246,7 @@ class LinkedList:
             q = q.next
             count += 1
 
-        if not q:
+        if not q and count < n:
             print(str(n) + " is greater than the number of nodes in list.")
             return
 
